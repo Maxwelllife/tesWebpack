@@ -13,8 +13,6 @@ module.exports = {
             {
                 test: /\.png/,
                 type: "asset/resource",
-                test: /\.svg/,
-                type: "asset/inline",
                 dependency: { not: ["url"] },
                 use: [
                     {
@@ -26,11 +24,11 @@ module.exports = {
                 ],
                 type: "javascript/auto",
             },
+
             {
                 test: /\.(scss|css)$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "style-loader",
                     "css-loader",
                     "postcss-loader",
                     "sass-loader",
@@ -40,7 +38,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].[contenthash].css",
+            filename: "[name].css",
         }),
     ],
 };
