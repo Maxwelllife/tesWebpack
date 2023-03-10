@@ -150,6 +150,7 @@
 <!--                </div>-->
 <!--            </div>-->
         </section>
+<!--        возможно тут нехватате класса контейнер-->
         <section class="subscribe">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-sm-12">
@@ -158,15 +159,15 @@
                     <form class="subscribe__form col-lg-6 col-sm-12 d-flex flex-column align-items-center ">
                         <p class="subscribe__title">Grow your subscription</p>
                         <div class="mb-3">
-<!--                            <label for="Location" class="form-label">Location</label>-->
+                            <label for="Location" class="form-label"></label>
                             <input type="text" class="subscribe__input form-control" id="Location" placeholder="Location">
                         </div>
                         <div class="mb-3">
-<!--                            <label for="typeOfOffice" class="form-label">Type</label>-->
+                            <label for="typeOfOffice" class="form-label"></label>
                             <input type="text" class="subscribe__input form-control" id="typeOfOffice" placeholder="Type">
                         </div>
                         <div class="mb-3">
-<!--                            <label for="date" class="form-label" >Date</label>-->
+                            <label for="date" class="form-label" ></label>
                             <input type="text" class="subscribe__input form-control" id="date" placeholder="Date">
                         </div>
                         <button type="submit" class="subscribe__btn-font btn btn-secondary">SEND</button>
@@ -178,21 +179,25 @@
     <footer></footer>
 
     <div class="backdrop backdrop--hidden">
-        <div class="modal">
-                <ul class="modal__list">
-                    <li class="modal__list ">
+        <div class="modalMenu d-flex align-items-start justify-content-between">
+                <ul class="modalMenu__list">
+                    <li class="modalMenu__item ">
                         <a class="nav__link" href="./index.html">Home</a>
                     </li>
-                    <li class="modal__list ">
+                    <li class="modalMenu__item ">
                         <a class="nav__link" href="#">Features</a>
                     </li>
-                    <li class="modal__list ">
+                    <li class="modalMenu__item ">
                         <a class="nav__link" href="#">Pricing</a>
                     </li>
-                    <li class="modal__list ">
+                    <li class="modalMenu__item ">
                         <a class="nav__link" href="#">Blog</a>
                     </li>
                 </ul>
+            <div class="d-flex flex-column pt-5">
+                <img src="assets/png/Hero3D.png" alt="hero3d" width="300">
+                <button type="button" class="btn btn-secondary">Get Started</button>
+            </div>
             <button class="close">
                 <img  src="./assets/svg/close.svg" alt="close" />
             </button>
