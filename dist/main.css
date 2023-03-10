@@ -5034,11 +5034,21 @@ button {
   margin-left: 40px;
   background-color: transparent;
 }
+@media (max-width: 991.98px) {
+  .hero__imgWrapper {
+    margin-top: 50px;
+  }
+}
 
 .clients__logo:not(:last-child) {
   margin-right: 45px;
 }
 
+@media (max-width: 991.98px) {
+  .subscribe__imgWrapper {
+    margin-bottom: 50px;
+  }
+}
 .subscribe__form {
   width: 427px;
   margin-right: auto;
@@ -5046,9 +5056,12 @@ button {
   border-radius: 16px;
   background-color: #5454D4;
 }
+@media (max-width: 991.98px) {
+  .subscribe__form {
+    margin-right: 0;
+  }
+}
 .subscribe__title {
-  padding-left: 7px;
-  padding-bottom: 35px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 29px;

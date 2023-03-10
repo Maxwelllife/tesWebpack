@@ -24,4 +24,10 @@
     margin-left: 40px;
     background-color: transparent;
   }
+  @include media-breakpoint-down(lg) {
+    &__imgWrapper {
+    margin-top: 50px;
+    }
+  }
+
 }
