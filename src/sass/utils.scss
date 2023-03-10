@@ -1,8 +1,8 @@
-@mixin mobile {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
-}
+//@mixin mobile {
+//    @media screen and (max-width: 768px) {
+//        @content;
+//    }
+//}
 
 
 $primary-color: #5454D4;
@@ -46,4 +46,25 @@ button {
     padding-top: 30px;
     width: 1920px;
     gap:10px;
+}
+@include media-breakpoint-down(sm) {
+    .container {
+        padding-top: 20px;
+        width: 576px;
+    }
+}
+
+
+.btn{
+    border: none;
+    width: 211px;
+    height: 60px;
+    font-size: 17px;
+    line-height: calc(20/17);
+    letter-spacing: -0.531474px;
+}
+
+
+.btn-secondary {
+    background-color: $secondary-color;
 }

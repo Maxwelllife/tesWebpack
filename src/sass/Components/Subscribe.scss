@@ -1,0 +1,30 @@
+.subscribe{
+  &__form {
+    width: 427px;
+    margin-right: auto;
+    padding: 36px 38px 17px;
+    border-radius: 16px;
+    background-color: $primary-color;
+
+  }
+  &__title {
+    padding-left: 7px;
+    padding-bottom: 35px;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: calc(35/29);
+
+    color: #FFFFFF;
+  }
+  &__input {
+    width: 350px;
+    height: 65px;
+  }
+  &__btn-font {
+    margin-top: 25px;
+    margin-bottom: 17px;
+
+  }
+}

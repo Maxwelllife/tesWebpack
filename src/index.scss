@@ -1,175 +1,23 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+//@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap-utilities";
 @import "sass/utils";
-@include media-breakpoint-up(md) {
-    .menu {
-        display: none;
-    }
-}
-.hideBtn {
-    @include media-breakpoint-down(md){
-        display: none;
-    }
-}
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f5f5f5;
-
-    opacity: 1;
-    transition: opacity 250ms ease-in-out,
-    visibility 250ms ease-in-out;
-}
-.backdrop--hidden {
-     opacity: 0;
-     visibility: hidden;
-     pointer-events: none;
- }
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    background-color: transparent;
-    border: 1px solid $secondary-color;
-    border-radius: 50%;
-    cursor: pointer;
-    color: #696871;
-    //transition: color 250ms ease-in-out;
-    //&:hover,
-    //&:focus {
-    //    color: green;
-    //}
-}
-
-.nav {
-    &__list {
-        @include media-breakpoint-down(md){
-            display: none !important;
-
-        }
-
-}
-    &__item {
-        position: relative;
-
-        padding: 0 20px;
-        font-size: 15px;
-        line-height: calc(18/15);
-        letter-spacing: -0.468947px;
-        transition: transform 0.2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-
-}
+@import "sass/Components/Header";
+@import "sass/Components/Hero";
+@import "sass/Components/Clients";
+@import "sass/Components/Subscribe";
+@import "sass/Components/Modal";
 
 
-.btn{
-    border: none;
-    width: 211px;
-    height: 60px;
-    font-size: 17px;
-    line-height: calc(20/17);
-    letter-spacing: -0.531474px;
-}
 
 
-.btn-secondary {
-    background-color: $secondary-color;
-}
-.hero {
 
-    &__title {
-        margin-bottom: 30px;
 
-        font-size: 80px;
-        line-height: calc(77/80);
-        letter-spacing: -2.50105px;
 
-        color: #19191B;
-    }
-    &__description {
-        margin-bottom: 50px;
 
-        font-family: 'Mulish', sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: calc(30/20);
-        letter-spacing: -0.625263px;
 
-        color: #696871;
-    }
-    &__btn {
-         margin-left: 40px;
-         background-color: transparent;
-     }
-}
 
-.active-link::after {
-    content:"";
-    bottom:0;
-    left:19px;
-    position: absolute;
-    width: 41px;
-    height: 2px;
-    background-color: $primary-color;
-}
 
-.clients {
-    &__logo:not(:last-child) {
-        margin-right:45px;
-    }
-}
 
-.subscribe{
-    &__form {
-        width: 427px;
-        margin-right: auto;
-        padding: 36px 38px 17px;
-        border-radius: 16px;
-        background-color: $primary-color;
-
-    }
-    &__title {
-        padding-left: 7px;
-        padding-bottom: 35px;
-
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 29px;
-        line-height: calc(35/29);
-
-        color: #FFFFFF;
-    }
-    &__input {
-        width: 350px;
-        height: 65px;
-    }
-    &__btn-font {
-        margin-top: 25px;
-        margin-bottom: 17px;
-
-    }
-}
-.modalMenu__item {
-    padding: 20px 20px;
-    font-size: 34px;
-    line-height: calc(34/15);
-    transition: transform 0.2s ease-in-out;
-
-    &:hover {
-    transform: translateX(10px);
-}
-}
 
 
 

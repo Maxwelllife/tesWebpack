@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\n// const сarousel = document.querySelector('#myCarousel')\n// const carouselItems = document.querySelectorAll('.carousel-item');\n// for (let i = 0; i < carouselItems.length; i++) {\n//     carouselItems[i].addEventListener('click', function(event) {\n//         const clickedItem = event.target;\n//         clickedItem.classList.add('active');\n//         for (let j = 0; j < carouselItems.length; j++) {\n//             if (carouselItems[j] !== clickedItem) {\n//                 carouselItems[j].classList.remove('active');\n//             }\n//         }\n//     });\n// }\n\n// const burgerMenu = document.querySelector('.menu');\n// const menuList = document.querySelector('.nav__list');\n//\n// burgerMenu.addEventListener('click', () => {\n//     menuList.classList.toggle('active');\n// });\n\n//# sourceURL=webpack://forforce/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\n\n//# sourceURL=webpack://forforce/./src/index.js?");
 
 /***/ }),
 
