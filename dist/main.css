@@ -12529,22 +12529,26 @@ section {
   padding-top: 100px;
 }
 
+button {
+  border: none;
+}
+
 .container {
   padding-top: 30px;
-  width: 1083px;
+  width: 1920px;
   gap: 10px;
 }
 
 .menu {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .menu {
     display: block;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .nav__list {
     display: none !important;
   }
@@ -12555,6 +12559,14 @@ section {
   font-size: 15px;
   line-height: 1.2;
   letter-spacing: -0.468947px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.nav__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btn {
@@ -12588,13 +12600,12 @@ section {
 }
 .hero__btn {
   margin-left: 40px;
-  border: none;
   background-color: transparent;
 }
 
-.active::after {
+.active-link::after {
   content: "";
-  bottom: 0px;
+  bottom: 0;
   left: 19px;
   position: absolute;
   width: 41px;
@@ -12608,6 +12619,7 @@ section {
 
 .subscribe__form {
   width: 427px;
+  margin-right: auto;
   padding: 36px 38px 17px;
   border-radius: 16px;
   background-color: #5454D4;

@@ -1,6 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "sass/utils";
-.menu{
+.menu {
     display:none;
     @include mobile {
         display: block;
@@ -8,7 +8,7 @@
     }
 }
 .nav {
-    //width: 50%;
+
     &__list {
         @include mobile {
             display: none !important;
@@ -23,7 +23,13 @@
         font-size: 15px;
         line-height: calc(18/15);
         letter-spacing: -0.468947px;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
+
 }
 
 
@@ -36,8 +42,9 @@
     letter-spacing: -0.531474px;
 }
 
+
 .btn-secondary {
-    background-color: #FF7143;
+    background-color: $secondary-color;
 }
 .hero {
 
@@ -63,20 +70,18 @@
     }
     &__btn {
          margin-left: 40px;
-         border: none;
          background-color: transparent;
      }
 }
 
-.active::after {
+.active-link::after {
     content:"";
-    bottom:0px;
+    bottom:0;
     left:19px;
     position: absolute;
-    //display: inline-block;
     width: 41px;
     height: 2px;
-    background-color: #5454D4;
+    background-color: $primary-color;
 }
 
 .clients {
@@ -88,10 +93,10 @@
 .subscribe{
     &__form {
         width: 427px;
+        margin-right: auto;
         padding: 36px 38px 17px;
         border-radius: 16px;
-        background-color: #5454D4;
-
+        background-color: $primary-color;
 
     }
     &__title {

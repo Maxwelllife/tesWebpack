@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\nfunction component() {\n  var element = document.createElement(\"div\");\n\n  // Lodash, now imported by this script\n  element.innerHTML = _.join([\"Hello\", \"webpack\"], \" \");\n  return element;\n}\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://forforce/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\n// const сarousel = document.querySelector('#myCarousel')\nvar carouselItems = document.querySelectorAll('.carousel-item');\nfor (var i = 0; i < carouselItems.length; i++) {\n  carouselItems[i].addEventListener('click', function (event) {\n    var clickedItem = event.target;\n    clickedItem.classList.add('active');\n    for (var j = 0; j < carouselItems.length; j++) {\n      if (carouselItems[j] !== clickedItem) {\n        carouselItems[j].classList.remove('active');\n      }\n    }\n  });\n}\n\n// function component() {\n//     const element = document.createElement(\"div\");\n//\n//     // Lodash, now imported by this script\n//     element.innerHTML = _.join([\"Hello\", \"webpack\"], \" \");\n//\n//     return element;\n// }\n//\n// document.body.appendChild(component());\n\n//# sourceURL=webpack://forforce/./src/index.js?");
 
 /***/ }),
 

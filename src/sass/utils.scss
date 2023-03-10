@@ -1,8 +1,13 @@
 @mixin mobile {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         @content;
     }
 }
+
+$primary-color: #5454D4;
+$secondary-color: #FF7143;
+
+
 body {
     font-family: "DM Sans", sans-serif;
     // font-family: 'Lato', sans-serif;
@@ -33,8 +38,11 @@ h6 {
 section {
     padding-top: 100px;
 }
+button {
+    border: none;
+}
 .container {
     padding-top: 30px;
-    width: 1083px;
+    width: 1920px;
     gap:10px;
 }

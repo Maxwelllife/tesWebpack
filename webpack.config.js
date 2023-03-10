@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 module.exports = {
     entry: "./src/index.js",
     output: {
@@ -29,6 +30,7 @@ module.exports = {
                     filename: path.join('icons', '[name].[contenthash][ext]'),
                 },
             },
+
             {
                 test: /\.(scss|css)$/,
                 use: [
@@ -51,4 +53,21 @@ module.exports = {
             filename: "[name].css",
         }),
     ],
+    optimization: {
+        minimizer: [
+            new ImageMinimizerPlugin({
+                minimizer: {
+                    implementation: ImageMinimizerPlugin.imageminMinify,
+                    options: {
+                        plugins: [
+                            ['gifsicle', { interlaced: true }],
+                            ['jpegtran', { progressive: true }],
+                            ['optipng', { optimizationLevel: 5 }],
+                            ['svgo', { name: 'preset-default' }],
+                        ],
+                    },
+                },
+            }),
+        ],
+    },
 };
