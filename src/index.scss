@@ -1,3 +1,117 @@
-.title {
-    color: tomato;
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "sass/utils";
+.menu{
+    display:none;
+    @include mobile {
+        display: block;
+
+    }
+}
+.nav {
+    //width: 50%;
+    &__list {
+        @include mobile {
+            display: none !important;
+
+        }
+
+}
+    &__item {
+        position: relative;
+
+        padding: 0 20px;
+        font-size: 15px;
+        line-height: calc(18/15);
+        letter-spacing: -0.468947px;
+    }
+}
+
+
+.btn{
+    border: none;
+    width: 211px;
+    height: 60px;
+    font-size: 17px;
+    line-height: calc(20/17);
+    letter-spacing: -0.531474px;
+}
+
+.btn-secondary {
+    background-color: #FF7143;
+}
+.hero {
+
+    &__title {
+        margin-bottom: 30px;
+
+        font-size: 80px;
+        line-height: calc(77/80);
+        letter-spacing: -2.50105px;
+
+        color: #19191B;
+    }
+    &__description {
+        margin-bottom: 50px;
+
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: calc(30/20);
+        letter-spacing: -0.625263px;
+
+        color: #696871;
+    }
+    &__btn {
+         margin-left: 40px;
+         border: none;
+         background-color: transparent;
+     }
+}
+
+.active::after {
+    content:"";
+    bottom:0px;
+    left:19px;
+    position: absolute;
+    //display: inline-block;
+    width: 41px;
+    height: 2px;
+    background-color: #5454D4;
+}
+
+.clients {
+    &__logo:not(:last-child) {
+        margin-right:45px;
+    }
+}
+
+.subscribe{
+    &__form {
+        width: 427px;
+        padding: 36px 38px 17px;
+        border-radius: 16px;
+        background-color: #5454D4;
+
+
+    }
+    &__title {
+        padding-left: 7px;
+        padding-bottom: 35px;
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: calc(35/29);
+
+        color: #FFFFFF;
+    }
+    &__input {
+        width: 350px;
+        height: 65px;
+    }
+    &__btn-font {
+        margin-top: 25px;
+        margin-bottom: 17px;
+
+    }
 }

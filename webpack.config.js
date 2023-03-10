@@ -4,14 +4,13 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         filename: "main.js",
-        // filename: "./dist/main.js",
         path: path.resolve(__dirname, "dist"),
     },
-
+    mode: "development",
     module: {
         rules: [
             {
-                test: /\.png/,
+                test: /\.(png|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
                 dependency: { not: ["url"] },
                 use: [
@@ -22,9 +21,14 @@ module.exports = {
                         },
                     },
                 ],
-                type: "javascript/auto",
             },
-
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: path.join('icons', '[name].[contenthash][ext]'),
+                },
+            },
             {
                 test: /\.(scss|css)$/,
                 use: [
@@ -33,6 +37,12 @@ module.exports = {
                     "postcss-loader",
                     "sass-loader",
                 ],
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+
             },
         ],
     },
