@@ -7,7 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
@@ -16,7 +15,28 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\n\n//# sourceURL=webpack://forforce/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n/* harmony import */ var _scripts_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/nav */ \"./src/scripts/nav.js\");\n/* harmony import */ var _scripts_nav__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scripts_nav__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scripts_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/menu */ \"./src/scripts/menu.js\");\n/* harmony import */ var _scripts_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scripts_menu__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n// import \"./scripts/carousel\";\n\n//# sourceURL=webpack://forforce/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/menu.js":
+/*!*****************************!*\
+  !*** ./src/scripts/menu.js ***!
+  \*****************************/
+/***/ (() => {
+
+eval("(function () {\n  var refs = {\n    openModalBtn: document.querySelector('.menu'),\n    closeModalBtn: document.querySelector('.close'),\n    modal: document.querySelector('.backdrop')\n  };\n  refs.openModalBtn.addEventListener('click', toggleModal);\n  refs.closeModalBtn.addEventListener('click', toggleModal);\n  function toggleModal() {\n    refs.modal.classList.toggle('backdrop--hidden');\n  }\n})();\n\n//# sourceURL=webpack://forforce/./src/scripts/menu.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/nav.js":
+/*!****************************!*\
+  !*** ./src/scripts/nav.js ***!
+  \****************************/
+/***/ (() => {
+
+eval("(function () {\n  var links = document.querySelectorAll(\".nav__item\");\n  var nav = document.querySelector(\".nav__list\");\n  links.forEach(function (link) {\n    return link.addEventListener(\"click\", function () {\n      return setActive(link);\n    });\n  });\n  function setActive(link) {\n    nav.querySelector(\".active-link\").classList.remove(\"active-link\");\n    link.classList.add(\"active-link\");\n  }\n})();\n\n//# sourceURL=webpack://forforce/./src/scripts/nav.js?");
 
 /***/ }),
 
@@ -26,6 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://forforce/./src/index.scss?");
 
 /***/ })
@@ -57,6 +78,35 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

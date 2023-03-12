@@ -5040,8 +5040,25 @@ button {
   }
 }
 
-.clients__logo:not(:last-child) {
-  margin-right: 45px;
+.d-inline-block:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (min-width: 992px) {
+  .d-inline-block:not(:last-child) {
+    margin-right: 45px;
+  }
+}
+.d-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 991.98px) {

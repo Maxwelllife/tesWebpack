@@ -1,26 +1,22 @@
-.clients {
-  &__logo:not(:last-child) {
-    margin-right:45px;
+
+  .d-inline-block:not(:last-child) {
+    margin-right:20px;
   }
+  @include media-breakpoint-up(lg) {
+    .d-inline-block:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+.d-block {
+  margin-left: auto;
+  margin-right: auto;
 }
-//.carousel {
-//  display: none;
-//}
-//
-//@include media-breakpoint-down(md){
-//    .carousel {
-//      display: block;
-//  }
-//}
-//
-//.clients__noSlider {
-//  display: block;
-//}
-//
-//@include media-breakpoint-down(md){
-//  .clients__noSlider {
-//    display: none;
-//  }
-//}
+
+.carousel {
+  height: 140px;
+  display: flex;
+
+}
 
 
