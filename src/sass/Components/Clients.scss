@@ -1,13 +1,3 @@
-
-  .d-inline-block:not(:last-child) {
-    margin-right:20px;
-  }
-  @include media-breakpoint-up(lg) {
-    .d-inline-block:not(:last-child) {
-      margin-right: 45px;
-    }
-  }
-
 .d-block {
   margin-left: auto;
   margin-right: auto;
@@ -16,7 +6,4 @@
 .carousel {
   height: 140px;
   display: flex;
-
 }
-
-

@@ -4925,7 +4925,8 @@ a {
   color: currentColor;
 }
 
-p, ul {
+p,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -4947,12 +4948,6 @@ button {
   border: none;
 }
 
-.container {
-  padding-top: 30px;
-  width: 1920px;
-  gap: 10px;
-}
-
 @media (max-width: 575.98px) {
   .container {
     padding-top: 20px;
@@ -4966,10 +4961,34 @@ button {
   font-size: 17px;
   line-height: 1.1764705882;
   letter-spacing: -0.531474px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  -webkit-box-shadow: 0 32px 34px rgba(255, 112, 59, 0.317827);
+          box-shadow: 0 32px 34px rgba(255, 112, 59, 0.317827);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .btn-secondary {
-  background-color: #FF7143;
+  background-color: #ff7143;
+}
+
+.centeredTextBtn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  padding-top: 30px;
 }
 
 @media (min-width: 768px) {
@@ -5011,7 +5030,7 @@ button {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #5454D4;
+  background-color: #5454d4;
 }
 
 .hero__title {
@@ -5019,7 +5038,7 @@ button {
   font-size: 80px;
   line-height: 0.9625;
   letter-spacing: -2.50105px;
-  color: #19191B;
+  color: #19191b;
 }
 .hero__description {
   margin-bottom: 50px;
@@ -5040,15 +5059,6 @@ button {
   }
 }
 
-.d-inline-block:not(:last-child) {
-  margin-right: 20px;
-}
-
-@media (min-width: 992px) {
-  .d-inline-block:not(:last-child) {
-    margin-right: 45px;
-  }
-}
 .d-block {
   margin-left: auto;
   margin-right: auto;
@@ -5066,16 +5076,24 @@ button {
     margin-bottom: 50px;
   }
 }
+.subscribe__img-pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
 .subscribe__form {
   width: 427px;
   margin-right: auto;
   padding: 36px 38px 17px;
   border-radius: 16px;
-  background-color: #5454D4;
+  background-color: #5454d4;
 }
 @media (max-width: 991.98px) {
   .subscribe__form {
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .subscribe__title {
@@ -5083,7 +5101,7 @@ button {
   font-weight: 700;
   font-size: 29px;
   line-height: 1.2068965517;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .subscribe__input {
   width: 350px;
@@ -5092,6 +5110,160 @@ button {
 .subscribe__btn-font {
   margin-top: 25px;
   margin-bottom: 17px;
+}
+
+.metrics__title, .metrics__text {
+  margin-bottom: 30px;
+}
+.metrics__text {
+  max-width: 459px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.625263px;
+}
+.metrics__link {
+  font-size: 17px;
+  line-height: 1.1764705882;
+  letter-spacing: -0.531474px;
+  color: #5454d4;
+}
+.metrics__img-pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.advantages__title {
+  text-align: center;
+}
+.advantages__description {
+  text-align: center;
+  max-width: 307px;
+}
+.advantages__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.account__titleBlock {
+  margin-bottom: 82px;
+}
+.account__title {
+  font-size: 60px;
+  line-height: 1.1666666667;
+  letter-spacing: -1.87579px;
+  color: #19191b;
+}
+@media (max-width: 991.98px) {
+  .account__title {
+    text-align: center;
+  }
+}
+.account__BtnBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 991.98px) {
+  .account__BtnBlock {
+    margin-top: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.account__Btn-first, .account__Btn-second {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 10px 0 0 10px;
+  color: #19191b;
+  background: #f7f7fb;
+  -webkit-box-shadow: 0 32px 34px rgba(255, 112, 59, 0.317827);
+          box-shadow: 0 32px 34px rgba(255, 112, 59, 0.317827);
+}
+@media (max-width: 991.98px) {
+  .account__Btn-first, .account__Btn-second {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.account__Btn-second {
+  border-radius: 0 10px 10px 0;
+}
+.account .active-btn {
+  background-color: #5454d4;
+  color: #fff;
+}
+.account__card-outerWrapper {
+  width: 376px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+@media (max-width: 991.98px) {
+  .account__card-outerWrapper {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .account__card-outerWrapper {
+    width: 300px;
+  }
+}
+.account__card {
+  width: 100%;
+  text-align: center;
+  padding: 34px;
+  -webkit-box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+          box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+  border-radius: 10px;
+  border-color: transparent;
+}
+.account__card-text {
+  padding-bottom: 22px;
+}
+.account__card-title {
+  padding-bottom: 28px;
+}
+.account__card-list {
+  padding: 5px;
+  margin-bottom: 36px;
+}
+.account__cardBtn {
+  width: 100%;
+  padding: 19px;
+  border: 1px solid #eae9f2;
+  border-radius: 10px;
+  color: #5454d4;
+}
+.account .active-card {
+  background-color: #ff7143;
+  color: #fff;
+}
+.account .account__card-outerWrapper.active-card .account__cardBtn {
+  background-color: #9f3919;
+  border: transparent;
+  color: #fff;
+}
+
+.footer {
+  background: #5454d4;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(32%, #5454d4), color-stop(65%, #ff7143));
+  background: linear-gradient(360deg, #5454d4 32%, #ff7143 65%);
 }
 
 .backdrop {
@@ -5120,7 +5292,7 @@ button {
   height: 30px;
   padding: 0;
   background-color: transparent;
-  border: 1px solid #FF7143;
+  border: 1px solid #ff7143;
   border-radius: 50%;
   cursor: pointer;
   color: #696871;

@@ -1,8 +1,14 @@
-.subscribe{
+.subscribe {
   @include media-breakpoint-down(lg) {
     &__imgWrapper {
       margin-bottom: 50px;
     }
+  }
+
+  &__img-pos {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__form {
@@ -12,26 +18,30 @@
     border-radius: 16px;
     background-color: $primary-color;
   }
+
   @include media-breakpoint-down(lg) {
-     &__form{
-       margin-right: 0;
-     }
-   }
+    &__form {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   &__title {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 29px;
-    line-height: calc(35/29);
+    line-height: calc(35 / 29);
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
+
   &__input {
     width: 350px;
     height: 65px;
   }
+
   &__btn-font {
     margin-top: 25px;
     margin-bottom: 17px;
-
   }
 }

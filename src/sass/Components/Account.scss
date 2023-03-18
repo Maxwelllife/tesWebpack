@@ -1,0 +1,104 @@
+.account {
+  &__titleBlock {
+    margin-bottom: 82px;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: calc(70 / 60);
+    letter-spacing: -1.87579px;
+    color: $title;
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+  }
+
+  &__BtnBlock {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 70px;
+      justify-content: center;
+    }
+  }
+
+  &__Btn-first,
+  &__Btn-second {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px 0 0 10px;
+    color: $title;
+    background: #f7f7fb;
+    box-shadow: 0 32px 34px rgba(255, 112, 59, 0.317827);
+
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+  }
+
+  &__Btn-second {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .active-btn {
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  &__card-outerWrapper {
+    width: 376px;
+    margin-top: 30px;
+    border-radius: 10px;
+    @include media-breakpoint-down(lg) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @include media-breakpoint-between(lg, xxl) {
+      width: 300px;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    text-align: center;
+    padding: 34px;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+    border-radius: 10px;
+    border-color: transparent;
+  }
+
+  &__card-text {
+    padding-bottom: 22px;
+  }
+
+  &__card-title {
+    padding-bottom: 28px;
+  }
+
+  &__card-list {
+    padding: 5px;
+    margin-bottom: 36px;
+  }
+
+  &__cardBtn {
+    width: 100%;
+    padding: 19px;
+    border: 1px solid #eae9f2;
+    border-radius: 10px;
+    color: $primary-color;
+  }
+
+  .active-card {
+    background-color: #ff7143;
+    color: #fff;
+  }
+
+  // применить стили к account__cardBtn когда рядом account__card-outerWrapper появиться класс active-card
+  .account__card-outerWrapper.active-card .account__cardBtn {
+    background-color: #9f3919;
+    border: transparent;
+    color: #fff;
+  }
+}

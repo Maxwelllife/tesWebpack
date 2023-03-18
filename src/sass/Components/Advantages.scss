@@ -1,0 +1,16 @@
+.advantages {
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+    max-width: 307px;
+  }
+
+  &__img {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

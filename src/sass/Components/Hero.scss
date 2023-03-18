@@ -1,33 +1,36 @@
 .hero {
 
-  &__title {
-    margin-bottom: 30px;
+    &__title {
+        margin-bottom: 30px;
 
-    font-size: 80px;
-    line-height: calc(77/80);
-    letter-spacing: -2.50105px;
+        font-size: 80px;
+        line-height: calc(77 / 80);
+        letter-spacing: -2.50105px;
 
-    color: #19191B;
-  }
-  &__description {
-    margin-bottom: 50px;
-
-    font-family: 'Mulish', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(30/20);
-    letter-spacing: -0.625263px;
-
-    color: #696871;
-  }
-  &__btn {
-    margin-left: 40px;
-    background-color: transparent;
-  }
-  @include media-breakpoint-down(lg) {
-    &__imgWrapper {
-    margin-top: 50px;
+        color: $title;
     }
-  }
+
+    &__description {
+        margin-bottom: 50px;
+
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: calc(30 / 20);
+        letter-spacing: -0.625263px;
+
+        color: #696871;
+    }
+
+    &__btn {
+        margin-left: 40px;
+        background-color: transparent;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &__imgWrapper {
+            margin-top: 50px;
+        }
+    }
 
 }

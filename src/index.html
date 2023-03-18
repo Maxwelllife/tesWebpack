@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <script src="https://unpkg.com/lodash@4.17.20"></script> -->
-        <link
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <script src="https://unpkg.com/lodash@4.17.20"></script> -->
+    <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
             crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@700&family=Mulish&display=swap"
             rel="stylesheet"
-        />
-        <link rel="stylesheet" href="../dist/main.css" />
-        <title>Test ForForce</title>
-    </head>
+    />
+    <link rel="stylesheet" href="../dist/main.css"/>
+    <title>Test ForForce</title>
+</head>
 
-    <body>
-    <header class="container d-flex justify-content-between align-items-center">
-        <a href="./index.html">
-            <img
+<body>
+<header class="container d-flex justify-content-between align-items-center header">
+    <a href="./index.html">
+        <img
                 class="logo"
                 src="./assets/svg/Logo.svg"
                 alt="logo"
                 width="200"
                 height="41"
-            />
-        </a>
-        <nav class="nav d-flex align-items-center">
-            <img class="menu" src="./assets/svg/menu_burger_icon.svg" alt="menu" width="40" height="40">
-            <ul class="nav__list d-flex justify-content-between">
-                <li class="nav__item active-link d-flex align-items-center">
-                    <a class="nav__link " href="./index.html">Home</a>
-                </li>
-                <li class="nav__item d-flex align-items-center">
-                    <a class="nav__link" href="#">Features</a>
-                </li>
-                <li class="nav__item d-flex align-items-center">
-                    <a class="nav__link" href="#">Pricing</a>
-                </li>
-                <li class="nav__item d-flex align-items-center">
-                    <a class="nav__link" href="#">Blog</a>
-                </li>
-            </ul>
-        </nav>
-        <button type="button" class="btn btn-secondary hideBtn">Get Started</button>
-    </header>
-    <main class="container">
-        <section class="hero row align-items-center">
+        />
+    </a>
+    <nav id="navbar-scroll" class="nav d-flex align-items-center navbar">
+        <img class="menu" src="./assets/svg/menu_burger_icon.svg" alt="menu" width="40" height="40">
+        <ul class="nav__list d-flex justify-content-between">
+            <li class="nav__item active-link d-flex align-items-center">
+                <a class="nav__link " href="./index.html">Home</a>
+            </li>
+            <li class="nav__item d-flex align-items-center">
+                <a class="nav__link" href="#advantages">Features</a>
+            </li>
+            <li class="nav__item d-flex align-items-center">
+                <a class="nav__link" href="#starter">Pricing</a>
+            </li>
+            <li class="nav__item d-flex align-items-center">
+                <a class="nav__link" href="#blog">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <!--    <button type="button" class="btn btn-secondary hideBtn">Get Started</button>-->
+    <a href="#getStarted" class="btn btn-secondary centeredTextBtn">Get Started</a>
+</header>
+<main>
+    <section class="container hero">
+        <div class="row align-items-center">
             <div class="col-lg-5 col-sm-12 ">
                 <h1 class="hero__title">Grow your subscription business</h1>
                 <p class="hero__description">
                     Outcome-centered products that reduce churn, optimize
                     pricing, and grow your subscription business end-to-end.
                 </p>
-                <button type="button" class="btn btn-primary ">
-                    Get Started
-                </button>
+                <!--                <button type="button" class="btn btn-primary">-->
+                <!--                    Get Started-->
+                <!--                </button>-->
+                <a href="#getStarted" class="btn btn-primary centeredTextBtn">Get Started</a>
                 <button type="button" class="hero__btn">
                     <img src="./assets/svg/downArrow.svg" alt="downArrow" width="60" height="60 "/>
                 </button>
@@ -74,105 +77,231 @@
                         height="auto"
                 />
             </div>
-        </section>
-        <section class="clients container">
-            <div class="d-none d-md-block">
-                <img src="./assets/svg/logoopsum1.svg" class="d-inline-block w-20" alt="clients logo">
-                <img src="./assets/svg/logoopsum2.svg" class="d-inline-block w-20" alt="clients logo">
-                <img src="./assets/svg/logoopsum3.svg" class="d-inline-block w-20" alt="clients logo">
-                <img src="./assets/svg/logoopsum4.svg" class="d-inline-block w-20" alt="clients logo">
-                <img src="./assets/svg/logoopsum5.svg" class="d-inline-block w-20" alt="clients logo">
-            </div>
-            <div class="d-md-none">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="./assets/svg/logoopsum1.svg" class="d-block w-50" alt="clients logo">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./assets/svg/logoopsum2.svg" class="d-block w-50" alt="clients logo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/svg/logoopsum3.svg" class="d-block w-50" alt="clients logo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/svg/logoopsum4.svg" class="d-block w-50" alt="clients logo">
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="./assets/svg/logoopsum5.svg" class="d-block w-50" alt="clients logo">
-                        </div>
+        </div>
+    </section>
+    <section class="container clients">
+        <div class="d-none d-md-flex justify-content-between">
+            <img src="./assets/svg/logoopsum1.svg" class="d-inline-block w-20" alt="clients logo">
+            <img src="./assets/svg/logoopsum2.svg" class="d-inline-block w-20" alt="clients logo">
+            <img src="./assets/svg/logoopsum3.svg" class="d-inline-block w-20" alt="clients logo">
+            <img src="./assets/svg/logoopsum4.svg" class="d-inline-block w-20" alt="clients logo">
+            <img src="./assets/svg/logoopsum5.svg" class="d-inline-block w-20" alt="clients logo">
+        </div>
+        <div class="d-md-none">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/svg/logoopsum1.svg" class="d-block w-50" alt="clients logo">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/svg/logoopsum2.svg" class="d-block w-50" alt="clients logo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/svg/logoopsum3.svg" class="d-block w-50" alt="clients logo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/svg/logoopsum4.svg" class="d-block w-50" alt="clients logo">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./assets/svg/logoopsum5.svg" class="d-block w-50" alt="clients logo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="container subscribe" id="getStarted">
+        <div class="row align-items-center justify-content-between subscribe__innerWrapper">
+            <div class="col-lg-6  subscribe__imgWrapper">
+                <img class="subscribe__img-pos" src="assets/png/ContentImage02.png" alt="Customer" width="300"
+                     height="auto"/>
+            </div>
+            <form class="subscribe__form col-lg-6  d-flex flex-column align-items-center ">
+                <p class="subscribe__title">Grow your subscription</p>
+                <div>
+                    <label for="Location" class="form-label"></label>
+                    <input type="text" class="subscribe__input form-control" id="Location" placeholder="Location">
+                </div>
+                <div>
+                    <label for="typeOfOffice" class="form-label"></label>
+                    <input type="text" class="subscribe__input form-control" id="typeOfOffice" placeholder="Type">
+                </div>
+                <div>
+                    <label for="date" class="form-label"></label>
+                    <input type="text" class="subscribe__input form-control" id="date" placeholder="Date">
+                </div>
+                <button type="submit" class="subscribe__btn-font btn btn-secondary">SEND</button>
+            </form>
+        </div>
+    </section>
+    <section class="container metrics" id="blog">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="metrics__title">In-depth metrics</h2>
+                <p class="metrics__text">Accurate, real-time reporting at your fingertips. Getting data has never been
+                    easier.</p>
+                <a class="metrics__link" href="#starter">Pricing</a>
+            </div>
+            <div class="col-lg-6">
+                <img class="metrics__img-pos" src="assets/png/сontent-Image03.png" alt="Customer" width="347"
+                     height="auto"/>
+            </div>
+        </div>
+    </section>
+    <section class="container d-md-flex advantages" id="advantages">
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <img class="advantages__img" src="./assets/svg/icon-card.svg" alt="credit card" width="151"
+                     height="auto"/>
+            </div>
+            <h3 class="advantages__title">Benchmarks</h3>
+            <p class="advantages__description">See how you stack up against comparable companies in similar stages.</p>
+        </div>
+        <div class="row row justify-content-center">
+            <div class="col-lg-4">
+                <img class="advantages__img" src="./assets/svg/icon-calc.svg" alt="calculator" width="151"
+                     height="auto"/>
+            </div>
+            <h3 class="advantages__title">Pricing Audit</h3>
+            <p class="advantages__description">Benchmark the health of your monetization and pricing strategy.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <img class="advantages__img" src="./assets/svg/icon-photoapparat.svg" alt="camera" width="151"
+                     height="auto"/>
+            </div>
+            <h3 class="advantages__title">Retention Audit</h3>
+            <p class="advantages__description">Audit where revenue leakage exists and where you can increase
+                retention.</p>
+        </div>
+    </section>
+    <section class="container account" data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+        <div class="row account__titleBlock">
+            <div class="col-lg-6">
+                <h2 class="account__title">Get the right plan for future product.</h2>
+            </div>
+            <div class="col-lg-6 account__BtnBlock">
+                <a class="btn account__Btn account__Btn-first active-btn" data-target="yearly">Yearly</a>
+                <a class="btn account__Btn account__Btn-second" data-target="monthly">Monthly</a>
+            </div>
+        </div>
+        <div class="d-lg-flex justify-content-between">
+            <div class="row account__card-outerWrapper">
+                <div id="starter" class="col-lg-4 account__card">
+                    <p class="account__card-text">Starter</p>
+                    <h2 class="account__card-title">Free</h2>
+                    <ul class="account__card-list">
+                        <li class="account__card-text">1 Website
+                        </li>
+                        <li class="account__card-text">5 GB Hosting
+                        </li>
+                        <li class="account__card-text">Limited Support
+                        </li>
+                    </ul>
+                    <a href="#getStarted" class="btn account__cardBtn">Get Started</a>
                 </div>
             </div>
-        </section>
-        <section class="subscribe">
-            <div class="row align-items-center justify-content-between ">
-
-                <div class="col-lg-6 col-sm-12 subscribe__imgWrapper">
-                    <img src="assets/png/ContentImage02.png" alt="Customer" width="349" height="auto"/>
+            <div class="row account__card-outerWrapper " data-target='monthly'>
+                <div id="premium" class="col-lg-4 account__card">
+                    <p class="account__card-text">Premium</p>
+                    <h2 class="account__card-title">$29/month</h2>
+                    <ul class="account__card-list">
+                        <li class="account__card-text">10 Website
+                        </li>
+                        <li class="account__card-text">15 GB Hosting
+                        </li>
+                        <li class="account__card-text">Premium Support
+                        </li>
+                    </ul>
+                    <a href="#getStarted" class="btn account__cardBtn">Get Started</a>
                 </div>
-                    <form class="subscribe__form col-lg-6 col-sm-12 d-flex flex-column align-items-center ">
-                        <p class="subscribe__title">Grow your subscription</p>
-                        <div class="">
-                            <label for="Location" class="form-label"></label>
-                            <input type="text" class="subscribe__input form-control" id="Location" placeholder="Location">
-                        </div>
-                        <div class="">
-                            <label for="typeOfOffice" class="form-label"></label>
-                            <input type="text" class="subscribe__input form-control" id="typeOfOffice" placeholder="Type">
-                        </div>
-                        <div class="">
-                            <label for="date" class="form-label" ></label>
-                            <input type="text" class="subscribe__input form-control" id="date" placeholder="Date">
-                        </div>
-                        <button type="submit" class="subscribe__btn-font btn btn-secondary">SEND</button>
-                    </form>
             </div>
-        </section>
-        <section></section>
-    </main>
-    <footer></footer>
+            <div class="row account__card-outerWrapper active-card" data-target='yearly'>
+                <div id="enterprise" class="col-lg-4 account__card">
+                    <p class="account__card-text">Enterprise</p>
+                    <h2 class="account__card-title">$49/year</h2>
+                    <ul class="account__card-list">
+                        <li class="account__card-text">Unlimited Website
+                        </li>
+                        <li class="account__card-text">50 GB Hosting
+                        </li>
+                        <li class="account__card-text">Premium Support
+                        </li>
+                    </ul>
+                    <a href="#getStarted" class="btn account__cardBtn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--<footer class="foot">-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, minus!</p>-->
+<!--</footer>-->
+<!--<footer class="footer">-->
+<!--    <div class="footer__company">-->
+<!--        <p>Copyright © 2023-->
+<!--            <a href="#">ForForce</a>-->
+<!--        </p>-->
+<!--    </div>-->
+<!--    <div class="footer__menu">-->
+<!--        <a href="#">Policy</a>-->
+<!--        <a href="#">Terms</a>-->
+<!--    </div>-->
 
-    <div class="backdrop backdrop--hidden">
-        <div class="modalMenu d-flex align-items-start justify-content-between">
-                <ul class="modalMenu__list">
-                    <li class="modalMenu__item ">
-                        <a class="nav__link" href="./index.html">Home</a>
-                    </li>
-                    <li class="modalMenu__item ">
-                        <a class="nav__link" href="#">Features</a>
-                    </li>
-                    <li class="modalMenu__item ">
-                        <a class="nav__link" href="#">Pricing</a>
-                    </li>
-                    <li class="modalMenu__item ">
-                        <a class="nav__link" href="#">Blog</a>
-                    </li>
-                </ul>
-            <div class="d-flex flex-column pt-5">
-                <img src="assets/png/Hero3D.png" alt="hero3d" width="300">
-                <button type="button" class="btn btn-secondary">Get Started</button>
-            </div>
-            <button class="close">
-                <img  src="./assets/svg/close.svg" alt="close" />
-            </button>
+<!--</footer>-->
+<footer class="container-fluid  text-light py-3 mt-5 footer">
+    <div class="row">
+        <div class="col-md-6">
+            <p>Copyright © 2023
+                <a href="#">ForForce</a>
+            </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+            <a class="mx-2" href="#">Privacy Policy</a>
+            <a class="mx-2" href="#">Terms of Use</a>
         </div>
     </div>
+</footer>
+<div class="backdrop backdrop--hidden">
+    <div class="modalMenu d-flex align-items-start justify-content-between">
+        <ul class="modalMenu__list">
+            <li class="modalMenu__item">
+                <a class="nav__link" href="./index.html">Home</a>
+            </li>
+            <li class="modalMenu__item">
+                <a class="nav__link" href="#">Features</a>
+            </li>
+            <li class="modalMenu__item">
+                <a class="nav__link" href="#">Pricing</a>
+            </li>
+            <li class="modalMenu__item">
+                <a class="nav__link" href="#">Blog</a>
+            </li>
+        </ul>
+        <div class="d-flex flex-column pt-5">
+            <img src="assets/png/Hero3D.png" alt="hero3d" width="300">
+            <button type="button" class="btn btn-secondary">Get Started</button>
+        </div>
+        <button class="close">
+            <img src="./assets/svg/close.svg" alt="close"/>
+        </button>
+    </div>
+</div>
 
 
+<script src="../dist/main.js"></script>
 
-    <script src="../dist/main.js"></script>
-<!--    <script src="scripts/menu.js"></script>-->
-<!--    <script src="scripts/nav.js"></script>-->
-<!--    <script src="scripts/carousel.js"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
 </html>
