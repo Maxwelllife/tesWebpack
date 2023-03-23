@@ -1,24 +1,25 @@
 <div class="backdrop backdrop--hidden">
   <div class="modalMenu d-flex align-items-start justify-content-between">
-    <ul class="modalMenu__list">
+    <ul class="modalMenu__list close-js">
       <li class="modalMenu__item">
-        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./main.html">Home</a>
       </li>
       <li class="modalMenu__item">
-        <a class="nav__link" href="#">Features</a>
+        <a class="nav__link" href="#advantages">Features</a>
       </li>
       <li class="modalMenu__item">
-        <a class="nav__link" href="#">Pricing</a>
+        <a class="nav__link" href="#starter">Pricing</a>
       </li>
       <li class="modalMenu__item">
-        <a class="nav__link" href="#">Blog</a>
+        <a class="nav__link" href="#blog">Blog</a>
       </li>
     </ul>
     <div class="d-flex flex-column pt-5 modalMenu__wrapper">
       <img  class="modalMenu__img" src="./assets/hero3d.png" alt="hero3d" width="300">
-      <button type="button" class="btn btn-secondary">Get Started</button>
+{#      <button type="button" class="btn btn-secondary">Get Started</button>#}
+      <a href="#getStarted" class="btn btn-secondary centeredTextBtn close-js">Get Started</a>
     </div>
-    <button class="close">
+    <button class="close-js close">
       <svg width="30" height="30" area-label="close menu button">
         <use xlink:href="./assets/symbol_sprite.svg#close"></use>
       </svg>

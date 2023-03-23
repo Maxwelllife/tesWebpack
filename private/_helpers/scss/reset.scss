@@ -22,6 +22,9 @@ input[type="submit"] {
   -webkit-appearance: none;
   appearance: none;
 }
+//body:not(.backdrop--hidden) {
+//  overflow: hidden;
+//}
 body {
   //min-width: $body-min-width;
   //font-size: $font-size-body;
@@ -70,7 +73,7 @@ section {
 }
 @include media-breakpoint-down(sm) {
   .btn {
-    width: 160px;
+    width: 140px;
   }
 }
 
@@ -82,6 +85,11 @@ section {
   align-items: center;
   display: inline-flex;
   justify-content: center;
+}
+.hideBtn {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 @include media-breakpoint-down(sm) {

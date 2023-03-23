@@ -10,33 +10,33 @@
 <body>
 <div class="d-flex flex-column vh-100">
 {% include "./blocks/header/header.twig" %}
-{#<main class="flex-grow-1 flex-shrink-0 container">#}
-{#  {% block pageContent %}#}
-{#    <div class="typography">#}
-{#      <h1>Page list</h1>#}
-{#      <ul>#}
-{#        <li>#}
-{#          <b>Main</b>: <a href="main.html">main.html</a>#}
-{#        </li>#}
-{#      </ul>#}
-{#      <hr>#}
-{#      <h1>Environment constants</h1>#}
-{#      <ol>#}
-{#        <li>#}
-{#          <b>NODE_ENV</b>: <code>{{ NODE_ENV }}</code>#}
-{#        </li>#}
-{#        <li>#}
-{#          <b>FOLDER_PRIVATE_BASE</b>: <code>{{ FOLDER_PRIVATE_BASE }}</code>#}
-{#        </li>#}
-{#        <li>#}
-{#          <b>FOLDER_PUBLIC_BASE</b>: <code>{{ FOLDER_PUBLIC_BASE }}</code>#}
-{#        </li>#}
-{#      </ol>#}
-{#    </div>#}
-{#  {% endblock %}#}
-{#</main>#}
+<main class="flex-grow-1 flex-shrink-0 container">
+  {% block pageContent %}
+    <div class="typography">
+      <h1>Page list</h1>
+      <ul>
+        <li>
+          <b>Main</b>: <a href="main.html">main.html</a>
+        </li>
+      </ul>
+      <hr>
+      <h1>Environment constants</h1>
+      <ol>
+        <li>
+          <b>NODE_ENV</b>: <code>{{ NODE_ENV }}</code>
+        </li>
+        <li>
+          <b>FOLDER_PRIVATE_BASE</b>: <code>{{ FOLDER_PRIVATE_BASE }}</code>
+        </li>
+        <li>
+          <b>FOLDER_PUBLIC_BASE</b>: <code>{{ FOLDER_PUBLIC_BASE }}</code>
+        </li>
+      </ol>
+    </div>
+  {% endblock %}
+</main>
 
-{#  {% include "./blocks/footer/footer.twig" %}#}
+  {% include "./blocks/footer/footer.twig" %}
   {% include "./components/modal/modal.twig" %}
 </div>
 
