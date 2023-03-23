@@ -1,13 +1,22 @@
 const modal = () => {
-  const refs = {
-    openModalBtn: document.querySelector('.menu'),
-    closeModalBtn: document.querySelector('.close'),
-    modal: document.querySelector('.backdrop'),
-  };
-  function toggleModal() {
-    refs.modal.classList.toggle('backdrop--hidden');
+  const openModalBtn = document.querySelector('.menu-js');
+  const closeModalBtn = document.querySelector('.close');
+  const modal = document.querySelector('.backdrop');
+
+  //   function toggleModal() {
+  //     // modal.classList.toggle('backdrop--hidden');
+  //     modal.classList.remove('backdrop--hidden');
+  //   }
+
+  function hideModal() {
+    modal.classList.add('backdrop--hidden');
   }
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function showModal() {
+    modal.classList.remove('backdrop--hidden');
+  }
+
+  openModalBtn.addEventListener('click', showModal);
+  closeModalBtn.addEventListener('click', hideModal);
 };
 export default modal;

@@ -68,6 +68,11 @@ section {
   letter-spacing: -0.531474px;
   @include hover-effect;
 }
+@include media-breakpoint-down(sm) {
+  .btn {
+    width: 160px;
+  }
+}
 
 .btn-secondary {
   background-color: $brand-secondary;
@@ -82,6 +87,6 @@ section {
 @include media-breakpoint-down(sm) {
   .container {
     padding-top: 20px;
-    width: 576px;
+    //width: 576px;
   }
 }
