@@ -1,0 +1,87 @@
+@import "~normalize.css";
+@import "variables";
+
+
+//Reset and base style
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+textarea,
+select,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+body {
+  //min-width: $body-min-width;
+  //font-size: $font-size-body;
+  font-family: $font-family-primary;
+  //font-weight: 300;
+  font-style: normal;
+  &.body--overflow {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+img {
+  max-width: 100%;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+section {
+  padding-top: 100px;
+}
+
+
+
+.btn {
+  border: none;
+  width: 211px;
+  height: 60px;
+  font-size: 17px;
+  line-height: calc(20 / 17);
+  letter-spacing: -0.531474px;
+  @include hover-effect;
+}
+
+.btn-secondary {
+  background-color: $brand-secondary;
+}
+
+.centeredTextBtn {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+@include media-breakpoint-down(sm) {
+  .container {
+    padding-top: 20px;
+    width: 576px;
+  }
+}

@@ -1,0 +1,28 @@
+.metrics {
+  &__title,
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 459px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    letter-spacing: -0.625263px;
+  }
+
+  &__link {
+    font-size: 17px;
+    line-height: calc(20 / 17);
+    letter-spacing: -0.531474px;
+    color: $brand-primary;
+  }
+
+  &__img-pos {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

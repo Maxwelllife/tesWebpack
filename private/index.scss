@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+@import "_helpers/scss/reset";
+@import "_helpers/scss/mixins";
+
+//Variables
+@import "_helpers/scss/_variables";
+@import "assets/font/style";
+
+//Form
+
+// Blocks
+@import "blocks/header/header";
+@import "blocks/hero/hero";
+@import "blocks/clients/clients";
+@import "blocks/subscribe/subscribe";
+@import "blocks/metrics/metrics";
+@import "blocks/advantages/advantages";
+@import "blocks/account/account";
+@import "blocks/footer/footer";
+@import "components/modal/modal";
+
+//TODO: зачем тут !important?
+* {
+  font-family: 'DM Sans', serif !important;
+}

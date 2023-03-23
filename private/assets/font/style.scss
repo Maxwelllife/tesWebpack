@@ -1,0 +1,42 @@
+
+//DM Sans
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./dm_sans/dmsans-regular.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./dm_sans/dmsans-medium.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./dm_sans/dmsans-bold.ttf') format('opentype');
+}
+
+// Lato
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./lato/lato-regular.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./lato/lato-bold.ttf') format('opentype');
+}
+
+// Mulish
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./mulish/mulish-regular.ttf') format('opentype');
+}
