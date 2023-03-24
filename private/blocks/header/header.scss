@@ -35,8 +35,9 @@
   color: $brand-third;
 }
 .active-link::after {
+
   content: "";
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   position: absolute;
   width: 100%;
