@@ -6,18 +6,21 @@
     </div>
     <form class="subscribe__form col-lg-6  d-flex flex-column align-items-center ">
       <p class="subscribe__title">Grow your subscription</p>
-      <div>
-        <label for="Location" class="form-label"></label>
-        <input type="text" class="subscribe__input form-control" id="Location" placeholder="Location">
-      </div>
-      <div>
-        <label for="typeOfOffice" class="form-label"></label>
-        <input type="text" class="subscribe__input form-control" id="typeOfOffice" placeholder="Type">
-      </div>
-      <div>
-        <label for="date" class="form-label"></label>
-        <input type="text" class="subscribe__input form-control" id="date" placeholder="Date">
-      </div>
+{#      <div class="subscribe__item">#}
+{#        <label for="Location" class="form-label"></label>#}
+{#        <input type="text" class="subscribe__input form-control" id="Location" placeholder="Location">#}
+{#      </div>#}
+{#      <div class="subscribe__item">#}
+{#        <label for="typeOfOffice" class="form-label"></label>#}
+{#        <input type="text" class="subscribe__input form-control" id="typeOfOffice" placeholder="Type">#}
+{#      </div>#}
+{#      <div class="subscribe__item">#}
+{#        <label for="date" class="form-label"></label>#}
+{#        <input type="text" class="subscribe__input form-control" id="date" placeholder="Date">#}
+{#      </div>#}
+      {% include "../../components/input/input.twig" with { 'id': 'Location', 'placeholder':'Location' } %}
+      {% include "../../components/input/input.twig" with { 'id': 'typeOfOffice', 'placeholder':'Type' } %}
+      {% include "../../components/input/input.twig" with { 'id': 'date', 'placeholder':'Date' } %}
       <button type="submit" class="subscribe__btn-font btn btn-secondary">SEND</button>
     </form>
   </div>

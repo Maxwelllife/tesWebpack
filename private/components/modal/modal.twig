@@ -16,8 +16,7 @@
     </ul>
     <div class="d-flex flex-column pt-5 modalMenu__wrapper">
       <img  class="modalMenu__img" src="./assets/hero3d.png" alt="hero3d" width="300">
-
-      <a href="#getStarted" class="btn btn-secondary centeredTextBtn close-js">Get Started</a>
+      {% include "../../components/button/button.twig" with { 'class': 'btn-secondary centeredTextBtn close-js' } %}
     </div>
     <button class="close-js close">
       <svg width="30" height="30" area-label="close menu button">

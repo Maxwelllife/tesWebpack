@@ -27,5 +27,6 @@
     </ul>
   </nav>
 {#  <button type="button" class="btn btn-secondary hideBtn">Get Started</button>#}
-  <a href="#getStarted" class="btn btn-secondary centeredTextBtn hideBtn">Get Started</a>
+  {% include "../../components/button/button.twig" with { 'class': 'btn-secondary centeredTextBtn hideBtn' } %}
+{#  <a href="#getStarted" class="btn btn-secondary centeredTextBtn hideBtn">Get Started</a>#}
 </header>

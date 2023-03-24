@@ -1,13 +1,17 @@
+.clients {
+  display: flex;
+
+}
+
 .d-block {
   margin-left: auto;
   margin-right: auto;
 }
 
-.carousel {
-  height: 140px;
-  display: flex;
-}
-
+//.carousel {
+//  height: 140px;
+//  display: flex;
+//}
 
 
 .carousel {
@@ -17,11 +21,17 @@
   background-color: #ddd;
 }
 .carousel__inner {
+  display: flex;
+  overflow: hidden;
   width: 750px;
 }
 .carousel__item {
-  display: block;
+  flex-shrink: 0;
   width: 150px;
+
+}
+.active {
+
 }
 
 

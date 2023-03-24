@@ -60,40 +60,8 @@ section {
   padding-top: 100px;
 }
 
-
-
-.btn {
-  border: none;
-  width: 211px;
-  height: 60px;
-  font-size: 17px;
-  line-height: calc(20 / 17);
-  letter-spacing: -0.531474px;
-  @include hover-effect;
-}
 @include media-breakpoint-down(sm) {
-  .btn {
-    width: 140px;
-  }
-}
-
-.btn-secondary {
-  background-color: $brand-secondary;
-}
-
-.centeredTextBtn {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-}
-.hideBtn {
-  @include media-breakpoint-down(md) {
-    display: none;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .container {
+  .section {
     padding-top: 20px;
     //width: 576px;
   }

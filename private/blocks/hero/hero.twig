@@ -6,15 +6,10 @@
         Outcome-centered products that reduce churn, optimize
         pricing, and grow your subscription business end-to-end.
       </p>
-      <!--                <button type="button" class="btn btn-primary">-->
-      <!--                    Get Started-->
-      <!--                </button>-->
-      <a href="#getStarted" class="btn btn-primary centeredTextBtn">Get Started</a>
-{#      <button type="button" class="hero__btn">#}
-{#        <svg width="60" height="60" area-label="button down">#}
-{#          <use xlink:href="./assets/symbol_sprite.svg#down_arrow"></use>#}
-{#        </svg>#}
-{#      </button>#}
+
+{#      <a href="#getStarted" class="btn btn-primary centeredTextBtn">Get Started</a>#}
+      {% include "../../components/button/button.twig" with { 'class': 'btn-primary centeredTextBtn' } %}
+
       <a href="#account" class="hero__btn">
       <svg width="60" height="60" area-label="button down">
         <use xlink:href="./assets/symbol_sprite.svg#down_arrow"></use>
