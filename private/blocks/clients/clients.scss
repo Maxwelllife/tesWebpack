@@ -10,9 +10,21 @@
 
 
 
-//.carousel {
-//  display: none;
-//}
+.carousel {
+  //display: none;
+  overflow: hidden;
+  width: 150px;
+  background-color: #ddd;
+}
+.carousel__inner {
+  width: 750px;
+}
+.carousel__item {
+  display: block;
+  width: 150px;
+}
+
+
 //
 //@include media-breakpoint-down(md){
 //    .carousel {

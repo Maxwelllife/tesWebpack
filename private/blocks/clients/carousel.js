@@ -1,12 +1,9 @@
-(() => {
-  const items = Array.from(document.querySelectorAll('.carousel-item'));
-  const carusel = document.querySelector('.carousel-inner');
+const carousel = () => {
+  const carusel = document.querySelector('.carousel__inner');
+  const items = Array.from(document.querySelectorAll('.carousel__item'));
 
-  const prevBtn = document.querySelector('.carousel-control-prev');
-  const nextBtn = document.querySelector('.carousel-control-next');
-
-  prevBtn.addEventListener('click', () => nextSlide(-1));
-  nextBtn.addEventListener('click', () => nextSlide(1));
+  const prevBtn = document.querySelector('.carousel__prevBtn');
+  const nextBtn = document.querySelector('.carousel__nextBtn');
 
   function nextSlide(next) {
     const activeSlide = carusel.querySelector('.active');
@@ -19,4 +16,14 @@
 
     items[nextIndex].classList.add('active');
   }
-})();
+  // prevBtn.addEventListener('click', () => nextSlide(-1));
+  prevBtn.addEventListener('click', () => {
+    console.log('Prev button clicked');
+    nextSlide(-1);
+  });
+  nextBtn.addEventListener('click', () => {
+    console.log('Next button clicked');
+    nextSlide(1);
+  });
+};
+export default carousel;
