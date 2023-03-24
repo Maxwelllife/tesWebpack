@@ -2,9 +2,11 @@
 //- Grid and Container size
 //- ----------------------------------------------
 $container-max-widths: (
-  xl: 1080px,
-)!default;
-$grid-gutter-width: 15px !default;
+  lg: 1104px,
+  //xl: 1074px,
+);
+$grid-gutter-width: 15px;
+
 $body-min-width: 320px;
 
 // - ----------------------------------------------

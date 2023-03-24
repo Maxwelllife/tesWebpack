@@ -1,11 +1,11 @@
-@import "~bootstrap/scss/bootstrap";
-@import "_helpers/scss/reset";
-@import "_helpers/scss/mixins";
 
 //Variables
 @import "_helpers/scss/_variables";
 @import "assets/font/style";
 
+@import "~bootstrap/scss/bootstrap";
+@import "_helpers/scss/reset";
+@import "_helpers/scss/mixins";
 
 //Form
 
@@ -17,7 +17,7 @@
 @import "blocks/metrics/metrics";
 @import "blocks/advantages/advantages";
 @import "blocks/account/account";
-@import "blocks/footer/footer";
+
 
 //Components
 @import "components/modal/modal";

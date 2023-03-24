@@ -48,6 +48,9 @@ ol {
   margin: 0;
   padding: 0;
 }
+li {
+  list-style-type: none;
+}
 h1,
 h2,
 h3,
@@ -58,6 +61,8 @@ h6 {
 }
 section {
   padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @include media-breakpoint-down(sm) {

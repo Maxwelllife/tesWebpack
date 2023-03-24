@@ -48,7 +48,7 @@
   }
 
   &__card-outerWrapper {
-    width: 376px;
+    width: 344px;
     margin-top: 30px;
     border-radius: 10px;
     @include media-breakpoint-down(lg) {
@@ -67,10 +67,24 @@
     width: 100%;
     text-align: center;
     padding: 34px;
-    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+
+    background-color: #F8F8F8;
     border-radius: 10px;
     border-color: transparent;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      background-color: #FF7143;
+      color: #fff;
+      box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+      transform: scale(1.03);
+    }
+    &:hover .account__cardBtn {
+      background-color: #9f3919;
+      border: transparent;
+      color: #fff;
+    }
   }
+
 
   &__card-text {
     padding-bottom: 22px;
@@ -90,18 +104,19 @@
     padding: 19px;
     border: 1px solid #eae9f2;
     border-radius: 10px;
+    background-color: #fff;
     color: $brand-primary;
   }
 
   .active-card {
-    background-color: #ff7143;
-    color: #fff;
+    //background-color: #ff7143;
+    //color: #fff;
   }
 
   // применить стили к account__cardBtn когда рядом account__card-outerWrapper появиться класс active-card
   .account__card-outerWrapper.active-card .account__cardBtn {
-    background-color: #9f3919;
-    border: transparent;
-    color: #fff;
+    //background-color: #9f3919;
+    //border: transparent;
+    //color: #fff;
   }
 }
