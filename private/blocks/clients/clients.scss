@@ -1,53 +1,55 @@
-.clients {
-  display: flex;
-
-}
-
-.d-block {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-//.carousel {
-//  height: 140px;
-//  display: flex;
-//}
-
+@import '../../../node_modules/slick-carousel/slick/slick';
 
 .carousel {
-  //display: none;
-  overflow: hidden;
-  width: 150px;
-  background-color: #ddd;
+  padding: 0 50px 30px;
+  margin: 20px;
+  &__img {
+    max-height: 50px;
+    margin: 0 auto;
+  }
 }
-.carousel__inner {
-  display: flex;
-  overflow: hidden;
-  width: 750px;
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  font-size: 0;
+
+  &::before {
+    display: block;
+    font-size: 40px;
+    line-height: 1;
+    color: $brand-third;
+  }
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
 }
-.carousel__item {
-  flex-shrink: 0;
-  width: 150px;
 
+.slick-prev {
+  left: 0;
+
+  &::before {
+    content: '\276E';
+  }
 }
-.active {
 
+.slick-next {
+  right: 0;
+
+  &::before {
+    content: '\276F';
+  }
 }
 
+@include media-breakpoint-up(md) {
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+   }
+}
 
-//
-//@include media-breakpoint-down(md){
-//    .carousel {
-//      display: block;
-//  }
-//}
-//
-//.clients__noSlider {
-//  display: block;
-//}
-//
-//@include media-breakpoint-down(md){
-//  .clients__noSlider {
-//    display: none;
-//  }
-//}

@@ -10,6 +10,7 @@
 
 .nav {
   &__list {
+    display: flex;
     @include media-breakpoint-down(md) {
       display: none !important;
     }

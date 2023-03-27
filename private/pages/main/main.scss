@@ -1,3 +1,20 @@
-.page--main {
-  color: #6610f2;
-}
+//Variables
+@import "../../_helpers/scss/_variables";
+@import "../../assets/font/style";
+
+@import "~bootstrap/scss/bootstrap";
+@import "../../_helpers/scss/reset";
+@import "../../_helpers/scss/mixins";
+
+// Blocks
+@import "../../blocks/hero/hero";
+@import "../../blocks/clients/clients";
+@import "../../blocks/subscribe/subscribe";
+@import "../../blocks/metrics/metrics";
+@import "../../blocks/advantages/advantages";
+@import "../../blocks/account/account";
+
+//Components
+@import "../../components/button/button";
+@import "../../components/input/input";
+
