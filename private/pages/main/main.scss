@@ -4,7 +4,6 @@
 
 @import "~bootstrap/scss/bootstrap";
 @import "../../_helpers/scss/reset";
-@import "../../_helpers/scss/mixins";
 
 // Blocks
 @import "../../blocks/hero/hero";
@@ -15,6 +14,6 @@
 @import "../../blocks/account/account";
 
 //Components
-@import "../../components/button/button";
+@import "../../components/btn/btn";
 @import "../../components/input/input";
 

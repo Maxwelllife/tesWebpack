@@ -5,7 +5,7 @@
 
         font-size: 80px;
         line-height: calc(77 / 80);
-        letter-spacing: -2.50105px;
+        letter-spacing: -2px;
 
         color: $brand-third;
 
@@ -22,7 +22,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: calc(30 / 20);
-        letter-spacing: -0.625263px;
+        letter-spacing: -1px;
 
         color: #696871;
     }
@@ -37,11 +37,4 @@
             margin-top: 50px;
         }
     }
-  //&__img {
-  //  @include media-breakpoint-down(lg) {
-  //    margin-left: auto;
-  //    margin-right: auto;
-  //  }
-  //}
-
 }

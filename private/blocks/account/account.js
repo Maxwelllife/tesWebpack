@@ -1,7 +1,7 @@
 const account = () => {
-  const parentBtn = document.querySelector('.account__BtnBlock');
-  const btns = document.querySelectorAll('.account__Btn');
-  const cards = document.querySelectorAll('.account__card-outerWrapper');
+  const parentBtn = document.querySelector('.js--account__btn-block');
+  const btns = document.querySelectorAll('.js--account__btn');
+  const cards = document.querySelectorAll('.js--account__card-outer-wrapper');
 
   function setActive(btn) {
     parentBtn.querySelector('.active-btn').classList.remove('active-btn');

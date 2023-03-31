@@ -1,61 +1,33 @@
-//- ----------------------------------------------
+
 //- Grid and Container size
-//- ----------------------------------------------
 $container-max-widths: (
   lg: 1104px,
   //xl: 1074px,
 );
 $grid-gutter-width: 15px;
-
 $body-min-width: 320px;
 
-// - ----------------------------------------------
 //- Z-index
-//- ----------------------------------------------
-//$zindex-header: 2 !default;
-//$zindex-preloader: 10 !default;
 
-//- ----------------------------------------------
 //- GLOBAL color
-//- ----------------------------------------------
+
 //Body colors
-//$body-background: #f6f6f6;
+
 //Brand colors
 $brand-primary: #5454D4;
 $brand-secondary: #FF7143;
 $brand-third: #19191b;
 
-
 //Inform colors
-//$brand-success: #23d27a;
-//$brand-info: #2ba3e1;
-//$brand-warning: #f87d3a;
-//$brand-danger: #ea4335;
 
-//- ----------------------------------------------
 //- Bootstrap
-//- ----------------------------------------------
-//$pagination-padding-x: 0.5rem;
-//- ----------------------------------------------
+
 //- TYPOGRAPHY
-//- ----------------------------------------------
+
 //Font
 $font-size-body: 16px;
 $font-family-primary: "DM Sans", sans-serif;
 //Font color
-//$font-color-title: #000;
-//$font-color-primary: #343434;
-//$font-color-secondary: #808080;
+
 //Links colors
-//$link-color: #005f99;
 
-
-
-@mixin hover-effect {
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 32px 34px rgba(255, 112, 59, 0.317827);
-    transform: translateY(-5px);
-  }
-}

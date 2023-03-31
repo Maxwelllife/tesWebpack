@@ -4,29 +4,6 @@
     <img src="./assets/logo.svg" alt="logo" width="200" height="41"/>
   </a>
 
-  <nav id="navbar-scroll" class="nav d-flex align-items-center navbar">
-    <span class="menu-js menu" >
-      <svg width="30" height="30" area-label="mobile menu button">
-        <use xlink:href="./assets/symbol_sprite.svg#menu_burger_icon"></use>
-      </svg>
-    </span>
-
-    <ul class="nav__list  justify-content-between">
-      <li class="nav__item active-link d-flex align-items-center">
-        <a class="nav__link " href="./main.html">Home</a>
-      </li>
-      <li class="nav__item align-items-center">
-        <a class="nav__link" href="#advantages">Features</a>
-      </li>
-      <li class="nav__item  align-items-center">
-        <a class="nav__link" href="#starter">Pricing</a>
-      </li>
-      <li class="nav__item  align-items-center">
-        <a class="nav__link" href="#blog">Blog</a>
-      </li>
-    </ul>
-  </nav>
-{#  <button type="button" class="btn btn-secondary hideBtn">Get Started</button>#}
-  {% include "../../components/button/button.twig" with { 'class': 'btn-secondary centeredTextBtn hideBtn' } %}
-{#  <a href="#getStarted" class="btn btn-secondary centeredTextBtn hideBtn">Get Started</a>#}
+  {% include "./nav/nav.twig" %}
+  {% include "../../components/btn/btn.twig" with { 'class': 'btn-secondary btn__centered-text btn__hide' } %}
 </header>

@@ -5,16 +5,16 @@
 
 @import "~bootstrap/scss/bootstrap";
 @import "_helpers/scss/reset";
-@import "_helpers/scss/mixins";
 
 
 // Blocks
 @import "blocks/header/header";
+@import "blocks/header/nav/nav";
 
 
 
 //Components
 @import "components/modal/modal";
-@import "components/button/button";
+@import "components/btn/btn";
 
 

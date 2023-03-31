@@ -1,6 +1,6 @@
 const modal = () => {
-  const openModalBtn = document.querySelector('.menu-js');
-  const closeModalBtns = document.querySelectorAll('.close-js');
+  const openModalBtn = document.querySelector('.js--menu');
+  const closeModalBtns = document.querySelectorAll('.js--close');
   const modal = document.querySelector('.backdrop');
 
   //   function toggleModal() {

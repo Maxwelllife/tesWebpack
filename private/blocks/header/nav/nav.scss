@@ -1,0 +1,41 @@
+.nav {
+  &__menu {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    @include media-breakpoint-down(md) {
+      display: none !important;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 20px;
+    font-size: 15px;
+    line-height: calc(18 / 15);
+    letter-spacing: -1px;
+    transition: transform 0.2s ease-in-out;
+    color: #696871;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+
+.js--active-link {
+  color: $brand-third;
+}
+
+.js--active-link::after {
+  content: "";
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $brand-primary;
+}

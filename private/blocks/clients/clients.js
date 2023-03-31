@@ -2,7 +2,7 @@ import $ from 'jquery';
 // import 'slick-carousel';
 
 const InitSlider = () => {
-  $('.carousel').slick({
+  $('.clients').slick({
     mobileFirst: true,
     centerMode: true,
     arrows: true,
@@ -33,11 +33,11 @@ const InitSlider = () => {
 // $(window).resize(() => {
 //   const $windowWidth = $(window).width();
 //   if ($windowWidth >= 768) {
-//     $('.carousel').slick('destroy');
+//     $('.clients').slick('destroy');
 //   } else {
 //     // InitSlider();
-//     // $('.carousel').slick('reinit');
-//     $('.carousel').slick('refresh');
+//     // $('.clients').slick('reinit');
+//     $('.clients').slick('refresh');
 //   }
 // });
 export default InitSlider;

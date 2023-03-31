@@ -1,0 +1,33 @@
+.btn {
+  border: none;
+  width: 211px;
+  height: 60px;
+  font-size: 17px;
+  line-height: calc(20 / 17);
+  letter-spacing: -1px;
+  transition: all 0.3s ease-in-out;
+
+  @include media-breakpoint-down(sm) {
+    width: 140px;
+  }
+
+  &:hover {
+    box-shadow: 0 32px 34px rgba(255, 112, 59, 0.317827);
+    transform: translateY(-5px);
+    background-color: $brand-secondary;
+  }
+  &__centered-text {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+  }
+  &__hide {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+.btn-secondary {
+  background-color: $brand-secondary;
+}

@@ -1,15 +1,15 @@
 <section class="account" data-bs-spy="scroll" data-bs-target="#navbar-scroll" id="account">
-  <div class="row account__titleBlock">
+  <div class="row account__title-block">
     <div class="col-lg-6">
       <h2 class="account__title">Get the right plan for future product.</h2>
     </div>
-    <div class="col-lg-6 account__BtnBlock">
-      <a class="btn account__Btn account__Btn-first active-btn" data-target="yearly">Yearly</a>
-      <a class="btn account__Btn account__Btn-second" data-target="monthly">Monthly</a>
+    <div class="col-lg-6 js--account__btn-block account__btn-block">
+      <a class="btn js--account__btn account__btn-first active-btn" data-target="yearly">Yearly</a>
+      <a class="btn js--account__btn account__btn-second" data-target="monthly">Monthly</a>
     </div>
   </div>
   <div class="d-lg-flex justify-content-between">
-    <div class="row account__card-outerWrapper">
+    <div class="row js--account__card-outer-wrapper account__card-outer-wrapper">
       <div id="starter" class="col-lg-4 account__card">
         <p class="account__card-text">Starter</p>
         <h2 class="account__card-title">Free</h2>
@@ -21,11 +21,10 @@
           <li class="account__card-text">Limited Support
           </li>
         </ul>
-{#        <a href="#getStarted" class="btn account__cardBtn">Get Started</a>#}
-        {% include "../../components/button/button.twig" with { 'class': 'account__cardBtn' } %}
+        {% include "../../components/btn/btn.twig" with { 'class': 'account__card-btn' } %}
       </div>
     </div>
-    <div class="row account__card-outerWrapper " data-target='monthly'>
+    <div class="row js--account__card-outer-wrapper account__card-outer-wrapper" data-target='monthly'>
       <div id="premium" class="col-lg-4 account__card">
         <p class="account__card-text">Premium</p>
         <h2 class="account__card-title">$29/month</h2>
@@ -37,11 +36,10 @@
           <li class="account__card-text">Premium Support
           </li>
         </ul>
-{#        <a href="#getStarted" class="btn account__cardBtn">Get Started</a>#}
-        {% include "../../components/button/button.twig" with { 'class': 'account__cardBtn' } %}
+        {% include "../../components/btn/btn.twig" with { 'class': 'account__card-btn' } %}
       </div>
     </div>
-    <div class="row account__card-outerWrapper active-card" data-target='yearly'>
+    <div class="row js--account__card-outer-wrapper active-card account__card-outer-wrapper" data-target='yearly'>
       <div id="enterprise" class="col-lg-4 account__card">
         <p class="account__card-text">Enterprise</p>
         <h2 class="account__card-title">$49/year</h2>
@@ -53,8 +51,7 @@
           <li class="account__card-text">Premium Support
           </li>
         </ul>
-{#        <a href="#getStarted" class="btn account__cardBtn">Get Started</a>#}
-        {% include "../../components/button/button.twig" with { 'class': 'account__cardBtn' } %}
+        {% include "../../components/btn/btn.twig" with { 'class': 'account__card-btn' } %}
       </div>
     </div>
   </div>

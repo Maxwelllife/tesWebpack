@@ -17,7 +17,7 @@
     //pointer-events: none;
 }
 
-.close {
+.js--close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -28,14 +28,9 @@
     border-radius: 50%;
     cursor: pointer;
     color: #696871;
-    //transition: color 250ms ease-in-out;
-    //&:hover,
-    //&:focus {
-    //    color: green;
-    //}
 }
 
-.modalMenu {
+.modal-menu {
   &__item {
     padding: 20px 20px;
     font-size: 34px;
@@ -46,10 +41,12 @@
       transform: translateX(10px);
     }
   }
+
   &__wrapper {
     justify-content: space-between;
     align-items: center;
   }
+
   &__img {
     padding-top: 10vh;
   }

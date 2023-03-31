@@ -1,13 +1,20 @@
 @import '../../../node_modules/slick-carousel/slick/slick';
 
-.carousel {
+.clients {
   padding: 0 50px 30px;
   margin: 20px;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__img {
     max-height: 50px;
     margin: 0 auto;
   }
 }
+
 .slick-arrow {
   position: absolute;
   top: 50%;
@@ -44,12 +51,5 @@
   &::before {
     content: '\276F';
   }
-}
-
-@include media-breakpoint-up(md) {
-  .carousel {
-    display: flex;
-    justify-content: space-between;
-   }
 }
 
