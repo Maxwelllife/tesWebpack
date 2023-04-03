@@ -1,6 +1,6 @@
 <div class="backdrop backdrop--hidden">
   <div class="modal-menu d-flex justify-content-between">
-    <ul class="modal-menu__list js--close">
+    <ul class="modal-menu__list js--modal-menu__close">
       <li class="modal-menu__item">
         <a class="nav__link" href="./main.html">Home</a>
       </li>
@@ -16,10 +16,10 @@
     </ul>
     <div class="d-flex flex-column pt-5 modal-menu__wrapper">
       <img  class="modal-menu__img" src="./assets/hero3d.png" alt="hero3d" width="300">
-      {% include "../../components/btn/btn.twig" with { 'class': 'btn-secondary btn__centered-text js--close' } %}
+      {% include "../../components/btn/btn.twig" with { 'class': 'btn-secondary btn__centered-text js--modal-menu__close' } %}
     </div>
-    <button class="js--close">
-      <svg width="30" height="30" area-label="js--close menu button">
+    <button class="js--modal-menu__close modal-menu__close">
+      <svg width="30" height="30" area-label="close menu button">
         <use xlink:href="./assets/symbol_sprite.svg#close"></use>
       </svg>
     </button>
